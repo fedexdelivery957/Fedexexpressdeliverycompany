@@ -1,174 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WHO Afghanistan - Health for All</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>FedEx Express Delivery Company</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #f4f4f4, #eaeaea);
+      overflow-x: hidden;
     }
 
     header {
-      background-color: #1e293b;
-      padding: 20px;
+      background-color: #4d148c;
+      color: white;
+      padding: 1em;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
-    header img {
-      height: 60px;
+    header h1 span {
+      color: #ff6600;
     }
 
-    header h1 {
-      font-size: 1.8rem;
-    }
-
-    .section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #38bdf8;
-    }
-
-    .counter {
-      background-color: #1e40af;
-      padding: 20px;
-      border-radius: 12px;
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506619216599-9d16d0903dfd') no-repeat center center/cover;
+      color: white;
       text-align: center;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #facc15;
+      padding: 4em 1em;
     }
 
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
+    .hero h2 {
+      font-size: 2.5em;
     }
 
-    .contact {
-      background-color: #1e293b;
-      border-radius: 12px;
-      padding: 30px;
+    .container {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
     }
 
-    .contact label {
-      display: block;
-      margin: 10px 0 5px;
+    .options {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 2em;
+      flex-wrap: wrap;
+      gap: 1em;
     }
 
-    .contact input,
-    .contact textarea {
-      width: 100%;
-      padding: 10px;
-      background-color: #334155;
-      border: none;
+    .option {
+      text-align: center;
+      padding: 1em;
       border-radius: 8px;
-      color: white;
-      margin-bottom: 20px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 30%;
+      min-width: 100px;
     }
 
-    .contact button {
-      padding: 10px 20px;
-      background-color: #0ea5e9;
+    .option.track {
+      background-color: #4d148c;
       color: white;
+    }
+
+    .track-box {
+      display: flex;
+      gap: 1em;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2em;
+    }
+
+    .track-box input {
+      padding: 0.5em;
+      font-size: 1em;
+      width: 60%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .track-box button {
+      background: #ff6600;
+      color: white;
+      padding: 0.5em 1em;
+      font-size: 1em;
       border: none;
-      border-radius: 8px;
+      border-radius: 5px;
       cursor: pointer;
     }
 
-    footer {
-      background-color: #1e293b;
-      color: #94a3b8;
-      padding: 20px;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2em;
+      display: none;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 1em;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4d148c;
+      color: white;
+    }
+
+    .footer {
       text-align: center;
+      padding: 2em;
+      background-color: #4d148c;
+      color: white;
+      margin-top: 4em;
+    }
+
+    img.responsive-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-height: 400px;
+      object-fit: cover;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/WHO_Logo.svg/2560px-WHO_Logo.svg.png" alt="WHO Logo">
-    <h1>World Health Organization - Afghanistan</h1>
+    <h1>Fed<span>Ex</span></h1>
+    <div style="font-size: 1.5em;">👤</div>
   </header>
 
-  <div class="section">
-    <h2>About WHO Afghanistan</h2>
-    <p>
-      The WHO Afghanistan office works closely with the Ministry of Public Health to improve health systems, combat outbreaks, provide emergency health services, and support public health development throughout the region.
-    </p>
-  </div>
+  <section class="hero">
+    <h2>Connected to tomorrow.</h2>
+  </section>
+  
+  <!-- Responsive Image -->
+  <img src="fedex-worker.jpg" alt="" class="responsive-img">
 
-  <div class="section">
-    <h2>Monthly Treatment Stats</h2>
-    <div class="counter" id="treatmentCount">
-      Total Treatments This Month: <span id="totalTreatments">0</span>
+  <section class="container">
+    <div class="options">
+      <div class="option">FARES AND TRANSIT TIMES</div>
+      <div class="option track">TRACK</div>
+      <div class="option">SEND</div>
     </div>
-  </div>
 
-  <div class="section">
-    <h2>Health Programs & Services</h2>
-    <ul>
-      <li>COVID-19 Vaccination Campaign</li>
-      <li>Maternal and Child Health Services</li>
-      <li>Emergency Medical Aid</li>
-      <li>Nutrition Assistance</li>
-      <li>Polio Eradication Efforts</li>
-      <li>Mental Health and Psychosocial Support</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Latest News</h2>
-    <p>
-      July 2025: WHO has launched a new mobile health team initiative to reach underserved rural communities in northern provinces.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Contact WHO Afghanistan</h2>
-    <div class="contact">
-      <form onsubmit="event.preventDefault(); alert('Message sent successfully ✅');">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" required>
-
-        <label for="email">Your Email</label>
-        <input type="email" id="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" rows="4" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
+    <div class="track-box">
+      <input id="trackingId" type="text" placeholder="TRACKING ID" />
+      <button onclick="trackPackage()">TRACK →</button>
     </div>
-  </div>
 
-  <footer>
-    &copy; 2025 World Health Organization - Afghanistan | All rights reserved.
+    <table id="resultsTable">
+      <thead>
+        <tr><th colspan="2">SENDER'S INFORMATION</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Name</td><td>Dr Jennifer</td></tr>
+        <tr><td>Country</td><td>Afghanistan</td></tr>
+        <tr><td>Email</td><td>jn@gmail.com</td></tr>
+        <tr><td>Phone</td><td>00746525472</td></tr>
+        <tr><th colspan="2">RECEIVER'S INFORMATION</th></tr>
+        <tr><td>Name</td><td>Gustavo Daniel Viera</td></tr>
+        <tr><td>Country</td><td>Argentina</td></tr>
+        <tr><td>Email</td><td>empty</td></tr>
+        <tr><td>Direction</td><td>Jacobo Watt 5053, Buenos Aires</td></tr>
+        <tr><td>Phone</td><td>+54 9 11 3854-8729</td></tr>
+        <tr><th colspan="2">PACKAGE INFORMATION</th></tr>
+        <tr><td>Date of Arrival</td><td>23rd of July 2025</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 FedEx | All rights reserved</p>
   </footer>
 
   <script>
-    const treatmentData = [8500, 9200, 11300, 9900, 10200];
-    const currentMonth = new Date().getMonth() % treatmentData.length;
-    document.getElementById('totalTreatments').innerText = treatmentData[currentMonth].toLocaleString();
-  </script>
-</body>
+    function trackPackage() {
+      const input = document.getElementById('trackingId').value.trim();
+      const table = document.getElementById('resultsTable');
 
+      if (input === 'FEDEX-5491G') {
+        table.style.display = 'table';
+      } else {
+        table.style.display = 'none';
+        alert('Invalid Tracking ID. Please try again.');
+      }
+    }
+  </script>
+
+  <!-- ✅ Functional Tawk.to Script (outside <script> tag to avoid nesting error) -->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6882bebc31ae371913c58805/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+</body>
 </html>
