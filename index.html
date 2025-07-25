@@ -124,6 +124,16 @@
       max-height: 400px;
       object-fit: cover;
     }
+
+    .package-image {
+      display: none;
+      margin-top: 1em;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
   </style>
 </head>
 <body>
@@ -136,8 +146,8 @@
     <h2>Connected to tomorrow.</h2>
   </section>
   
-  <!-- Responsive Image -->
-  <img src="fedex-worker.jpg" alt="" class="responsive-img">
+  <!-- Top Image -->
+  <img src="fedex-worker.jpg" class="responsive-img">
 
   <section class="container">
     <div class="options">
@@ -168,6 +178,12 @@
         <tr><td>Phone</td><td>+573105021843</td></tr>
         <tr><th colspan="2">PACKAGE INFORMATION</th></tr>
         <tr><td>Date of Arrival</td><td>24th of July 2025</td></tr>
+        <tr><th colspan="2">PACKAGE IMAGE</th></tr>
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <img id="packageImage" src="fedex-package.jpg" class="package-image" />
+          </td>
+        </tr>
       </tbody>
     </table>
   </section>
@@ -180,11 +196,14 @@
     function trackPackage() {
       const input = document.getElementById('trackingId').value.trim();
       const table = document.getElementById('resultsTable');
+      const image = document.getElementById('packageImage');
 
       if (input === 'FEDEX-5731G') {
         table.style.display = 'table';
+        image.style.display = 'block';
       } else {
         table.style.display = 'none';
+        image.style.display = 'none';
         alert('Invalid Tracking ID. Please try again.');
       }
     }
@@ -204,6 +223,5 @@ s0.parentNode.insertBefore(s1,s0);
 })();
   </script>
   <!--End of Tawk.to Script-->
-
 </body>
 </html>
